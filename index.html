@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Number Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar Start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Complex Num<span>ber Solver</span></a>
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#materi">Materi</a>
+            <a href="#kalkulator">Kalkulator</a>
+            <a href="#referensi">Referensi</a>
+            <a href="#team">Team</a>
+        </div>
+    </nav>
+<!-- Navbar End -->
+
+<!-- Hero Section Start-->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Mari Belajar Tentang 
+                <br>Bilangan Kompleks</h1>
+            <p>Bilangan kompleks adalah jenis bilangan dalam matematika yang melibatkan bagian real dan imajiner.</p>
+            <img class="gambar" src="Image/Kalkulator2.png">
+            <div class="cta">
+                <a href="#materi" class="btn1">Mulai</a>
+                <a href="#kalkulator" class="btn2">Hitung</a>
+        </div>
+    </section>
+<!-- Hero Section End -->
+
+<!-- Materi Start -->
+    <section class="materi" id="materi">
+        <div class="container-materi">
+            <h1>APA ITU BILANGAN KOMPLEKS ?</h1>
+            <img class="gambar1" src="Image/ajb1.png">
+            <p>Bilangan kompleks adalah jenis bilangan dalam matematika yang melibatkan bagian real dan imajiner. Secara umum, 
+                notasi bilangan kompleks dinyatakan dalam bentuk z = a ­+ ib untuk suatu a,b bilangan real.</p>
+            <p>Penulisan bilangan kompleks z =
+                a+bj sering disingkat sebagai
+                pasangan terurut (a,b), oleh
+                karena itu bilangan kompleks
+                dapat dinyatakan dalam suatu
+                bidang datar seperti halnya
+                koordinat titik dalam sistem
+                koordinat kartesius</p>
+            <p>Bidang yang digunakan untuk
+                menggambarkan bilangan
+                kompleks disebut bidang
+                kompleks atau bidang argand</p>
+            <img class="gambar2" src="Image/ajb2.png">
+        </div>
+    </section>
+<!-- Materi End -->
+
+<!-- Kalkulator Section Start -->
+<section class="kalkulator" id="kalkulator">
+    <div class="container-kalkulator">
+        <div class="input-group">
+            <input placeholder="Masukkan Bilangan" type="text" id="inputNumber">
+            <button class="submit-button" onclick="operasiInputan()"><span>Hitung</span></button>
+            <button class="reset-button" onclick="menghapusInputan()"><span>Reset</span></button>
+        </div>
+        <div id="hasilOperasi" class="hasil-box"></div>
+        <div id="grafikArgand"></div>
+    </div>
+</section>
+<!-- Kalkulator Section End -->
+
+<!-- Referensi Section Start -->
+    <section class="referensi" id="referensi">
+        <div class="container-referensi">
+            <div class="tutor1">
+                <video></video control width="296" height="176">
+                    <iframe width="296" height="176" src="https://www.youtube.com/embed/CQ8hKSscfKY?si=goKtuzwBrhrnVCPq&amp;controls=0" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a href="https://youtu.be/CQ8hKSscfKY?feature=shared" class="buttontutor1"><span>Go To View ⮕</span></a>
+            </div>
+            <div class="tutor2">
+                <video></video control width="296" height="176">
+                    <iframe width="296" height="176" src="https://www.youtube.com/embed/baOIAQWGZJ0?si=5A4j4CZ4wPTK3rw9&amp;controls=0" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a href="https://youtu.be/baOIAQWGZJ0?feature=shared" class="buttontutor2"><span>Go To View ⮕</span></a>
+            </div>
+            <div class="tutor3">
+                <video></video control width="296" height="176">
+                    <iframe width="296" height="176" src="https://www.youtube.com/embed/JkYKP6HLakM?si=JvHOQ6VXu1sZhFfR&amp;controls=0" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a href="https://youtu.be/JkYKP6HLakM?si=8xItnJJ8_EVyVrIa" class="buttontutor3"><span>Go To View ⮕</span></a>
+            </div>
+            <div class="tutor4">
+                <video></video control width="296" height="176">
+                    <iframe width="296" height="176" src="https://www.youtube.com/embed/INkoQ2Tj6GU?si=q1OVjupRN8wqYdZn&amp;controls=0"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a href="https://youtu.be/INkoQ2Tj6GU?si=mESPL_1Etdn5PTBt" class="buttontutor4"><span>Go To View ⮕</span></a>
+            </div>
+            <div class="tutor5">
+                <video></video control width="296" height="176">
+                    <iframe width="296" height="176" src="https://www.youtube.com/embed/CMvKH_2CCag?si=PgKEpshe00TXRVkb&amp;controls=0" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a href="https://youtu.be/CMvKH_2CCag?si=ucLg6gEW8rzvvFYt" class="buttontutor4"><span>Go To View ⮕</span></a>
+            </div>
+        </div>
+    </section>
+<!-- Referensi Section End -->
+
+<!-- Team Section Start -->
+    <section class="team" id="team">
+        <div class="container-team">
+            <div class="anggota">
+                <div class="card1 card">
+                    <img src="image/Anggota/aida.png" alt="Anggota 1">
+                    
+                </div>
+                <div class="card2 card">
+                    <img src="image/Anggota/Rafli fajar.png" alt="Anggota 2">
+                    
+                </div>
+                <div class="card3 card">
+                    <img src="image/Anggota/yasfi.png" alt="Anggota 2">
+                   
+                </div>
+                <div class="card4 card">
+                    <img src="image/Anggota/ripqal.png" alt="Anggota 2">
+                    
+                </div>
+                <div class="card5 card">
+                    <img src="image/Anggota/lutfi.png" alt="Anggota 2">
+                    
+                </div>
+            </div>
+            <!-- Tambahkan card untuk anggota 3, 4, dan 5 sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+
+
+<!-- Team Section End -->
+<script src="Kalkulator.js"></script>
+</body>
+</html>
+
